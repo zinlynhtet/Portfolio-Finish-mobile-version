@@ -1,52 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:wght@100&family=Oswald:wght@300;400;500;600;700&display=swap');
-
-body {
-    background-color: aliceblue;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-
-}
-main {
-    background-color: aliceblue;
-    width: 100%;
-    height: 100vh;
-    border-radius: 0 0 15%;
-
-
-}
-header {
-  
-    border-bottom: 2px solid #6070ff;
-    display: flex;
-    justify-content: space-between;
+.navbar {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #6070ff;
+        position: relative;
 }
 .myLogo {
-    padding: 20px;
+       font-family: Oswald;
+        font-weight: 600;
+        font-size: 25px;
+        left: 16px;
+        margin-left: 16px;
+        padding: 10px 0;
+        color: #6070ff;
+}
+.nav-list {
+    list-style: none;
+    display: none;
+}
+.nav-list a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #6070ff;
+}
+.nav-icon{
+    color: #6070ff;
+    margin-right: 14px;
+}
+.hero h1{
+        color: #6070ff;
+        padding-left: 32px;
+        font-family: Oswald;
+        font-size: 30px;
+        padding: 20px;
+}
+.hero p{
+    color: #344563;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 30px;
+}
+.hero h2 {
+    margin: 20px 32px;
+    color: #6070ff;
+    font-family: Oswald;
+    font-size: 25px;
+}
+.icon {
+    font-size: 20px;
+    transition: 0.5s;
+    margin: 10px;
+    padding-left: 20px;
+    
+}
+.icon ion-icon:hover {
+    transform: scale(1.5);
+    filter: brightness(1.4);
+}
+@media (min-width :375px) {
+    .nav-list {
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    right: 0; 
+    margin-right: 25px;   
+    }
+    .nav-icon {
+        display: none;
+    }
+}
+/* header {
+    background-color: #253858;
+    position: relative;
+}
+.myLogo {
     font-family: Oswald;
     font-weight: 600;
     font-size: 25px;
+    position: absolute;
+    left: 16px;
+
+     
 
 }
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 80px;
+    display: none;
 
+}
+.nav-list a{
+    text-decoration: none;
+    color: #6070ff;
+}
 .nav-icon {
-    padding: 20px;
+    
+
     display: flex;
     font-family: Oswald;
-
+    position: absolute;
     font-size: 20px;
+    right: 14px;
+}
+.nav-icon a{
+    position: absolute;
+    left: 12px;
 }
  h1 {
     color: #6070ff;
     padding-left: 32px;
     font-family: Oswald;
     font-size: 30px;
+
 }
 
 
@@ -80,19 +159,282 @@ header {
     filter: brightness(1.4);
 }
 
-@media (max-width: 400px) {
-    h1 {
-        font-size: 28px;
-    }
-    .myLogo {
-        font-size: 20px;
 
-    }
-    .connect-link {
-        font-size: 20px;
-    }
-.social .icon {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.flex-item-left {
+    
+    padding: 10px;
+    flex: 50%;
+    
+}
+.flex-item-left img {
+    width: 100%;
+    margin: auto;
+
+    
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+    
+
+
+}
+.flex-item-right .card-title {
+    margin: 10px;
+    font-size: 50px;
+    font-family: Oswald;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+}
+ .canopy {
     font-size: 18px;
+    color: #344563;
+    font-family: Poppin;
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 24px;
+    word-wrap: break-word;
+    display: flex;
+    align-items: flex-start;
+}
+ .subheading-list-title {
+    font-size: 18px;
+    color: #6b778c;
 }
 
+ .subheading img {
+    margin-left: 10px;
+    padding: 10px;
 }
+.card-content {
+    margin: 10px;
+    
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-content p {
+    font-size: 1.5vw;
+    color: #344563;
+    word-wrap: none;
+    text-align: start;
+    
+}
+
+.webdev-language {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    column-gap: 1.1rem;
+    margin:10px;
+    padding: 10px;
+
+}
+.webdev-language li {
+    font-size: 16px;
+    color: #6070ff;
+    line-height: 16px;
+    font-weight: 500;
+    background: #EBEBFF;
+}
+.see-project {
+    color: #396DF2;
+    font-size: 17px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.51px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 1px #6070ff solid;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+}
+.flex-item-left h1 {
+    font-size: 35px;
+    display: flex;
+    align-self: start;
+}
+.flex-item-left p{
+    font-size: 1.1vw;
+    margin-left: 28px;
+    text-align: start;
+}
+.flex-item-left h2{
+    font-size: 20px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+.flex-item-left .social {
+    display: flex;
+    align-items: flex-start;
+}
+.my-resume {
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px #6070ff solid;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 10px 30px;
+}
+.lg-head{
+    display: flex;
+    align-items:flex-start;
+}
+.skill-logo {
+        padding-top: 12px;
+        padding-bottom: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+        background: #ececef;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        display: inline-flex;
+        margin-left: 30px;
+}
+.skill-logo img {
+        width: 48px;
+        height: 48px;
+        border-radius: 9999px;
+        border: 1px white solid;
+        background: #253858;
+}
+ .skill-logo .img-caption {
+        color: #253858;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 10px;
+        word-wrap: break-word;
+        align-items: center;
+}
+.group-logo {
+    display: flex;
+    align-items: flex-start;
+}
+.skill {
+        color: #344563;
+        font-size:16px;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 10px;
+        word-wrap: break-word;
+        display: flex;
+        align-items: flex-start;  
+        padding-top: 20px;   
+        margin-top: 20px;  
+        margin-left: 40px;
+    }
+.frame-work img {
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.contact-form {
+    position: relative;
+}
+.contact-main h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    color: white;
+     
+}
+.input-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form input {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-main p {
+    font-size: 16px;
+    color: aliceblue;
+    margin: 60px;
+}
+.contact-main img {
+    position:absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+        .flex-item-right {
+            margin: 30px;
+        }
+        .card-content p {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .flex-item-left p{
+            font-size: 16px;
+        }
+        .item {
+            margin: 20px;
+        }
+
+}
+@media (min-width : 768px) {
+        .flex-item-right .card-title {
+        font-size: 40px;
+    }
+        .contact-main img{
+        width: 100%;
+        }
+}
+@media (max-width : 660px) {
+    .flex-item-right .card-title {
+        font-size: 30px;
+    }
+        .webdev-language {
+            margin: 10px;
+        }
+        .webdev-language {
+            padding: 0;
+        }
+        .see-project{
+            margin-left: 10px;
+        }
+        .skill-logo img {
+            width: fit-content;
+        }
+        .contact-main img {
+            width: 100%;
+        }
+        
+} */
