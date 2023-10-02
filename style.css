@@ -139,6 +139,45 @@
 
     }
 }
+@media (min-width : 768px){
+    .hero h1 {
+            left: 200px;
+            top: 150px;
+        }
+    
+        .hero p {
+            left: 200px;
+            top: 250px;
+            right: 250px;
+        }
+    
+        .hero h2 {
+            left: 200px;
+            top: 310px;
+            right: 200px;
+        }
+    
+        .social {
+            left: 200px;
+            top: 345px;
+            right: inherit;
+    
+        }
+        .myLogo {
+            margin-left: 60px;
+        }
+        .nav-list a{
+            font-size: 18px;
+        }
+}
+@media (min-width :770px){
+    .hero h2 {
+        top: 370px;
+    }
+    .social {
+        top: 400px;
+    }
+}
 /* header {
     background-color: #253858;
     position: relative;
