@@ -31,7 +31,7 @@ For more information on the importance of a professional README for your reposit
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-  <h3><b>Portfolio Setup : Mobile First</b></h3>
+  <h3><b>Portfolio Finish Mobile Version</b></h3>
 
 </div>
 
@@ -58,7 +58,7 @@ For more information on the importance of a professional README for your reposit
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [My_Portfolio] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
